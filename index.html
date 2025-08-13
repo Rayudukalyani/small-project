@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topics on Tree Plantation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 30px 0;
+        color: #2c3e50;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .card {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        color: #333;
+    }
+    .card h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .card p {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    .btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 6px 14px;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    /* Background colors for each topic */
+    .tree { background-color: #ffffff; border: 2px solid #dce6f2; }
+    .global { background-color: #ffe1e1; }
+    .biodiversity { background-color: #cce6ff; }
+    .school { background-color: #fff9cc; }
+    .activity { background-color: #ffffff; border: 2px solid #dce6f2; }
+</style>
+</head>
+<body>
+
+<h1>Topics On Tree Plantation</h1>
+
+<div class="container">
+    <div class="card tree">
+        <h3 style="color:#0066cc;">Tree Plantation</h3>
+        <p>A tree plantation, also known as a forest plantation, is a forest established for high-volume wood production.</p>
+        <button class="btn" onclick="readMore('Tree Plantation')">Read more</button>
+    </div>
+
+    <div class="card global">
+        <h3 style="color:#0066cc;">Globalization</h3>
+        <p>Globalization has significant implications for forests and forestry practices worldwide.</p>
+        <button class="btn" onclick="readMore('Globalization')">Read more</button>
+    </div>
+
+    <div class="card biodiversity">
+        <h3 style="color:#0066cc;">Biodiversity</h3>
+        <p>Biodiversity refers to the variety and variability of life on Earth.</p>
+        <button class="btn" onclick="readMore('Biodiversity')">Read more</button>
+    </div>
+
+    <div class="card school">
+        <h3 style="color:#0066cc;">School</h3>
+        <p>Tree plantation in schools is a wonderful initiative that serves multiple purposes.</p>
+        <button class="btn" onclick="readMore('School')">Read more</button>
+    </div>
+
+    <div class="card activity">
+        <h3 style="color:#0066cc;">My Activity</h3>
+        <p>Complete report of our project with photos.</p>
+        <button class="btn" onclick="readMore('My Activity')">Read more</button>
+    </div>
+</div>
+
+<script>
+function readMore(topic) {
+    alert("You clicked on Read More for: " + topic);
+}
+</script>
+
+</body>
+</html>
